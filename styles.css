@@ -1,0 +1,91 @@
+:root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --primary: #38bdf8;
+            --text: #f1f5f9;
+            --success: #4ade80;
+            --error: #ef4444;
+            --border: #334155;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .dashboard { max-width: 1000px; margin: 0 auto; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 30px;
+        }
+
+        h1 { margin: 0; font-size: 1.5rem; }
+        h1 span { color: var(--primary); font-weight: 300; font-size: 0.9rem; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+
+        .card h3 { margin-top: 0; font-size: 1rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; }
+
+        .console {
+            background: #000;
+            height: 350px;
+            overflow-y: auto;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            border: 1px solid #334155;
+        }
+
+        .log-entry { margin-bottom: 5px; border-left: 2px solid #334155; padding-left: 10px; }
+        .log-extract { color: var(--primary); }
+        .log-transform { color: #fbbf24; }
+        .log-load { color: var(--success); }
+        .log-error { color: var(--error); }
+
+        .controls { display: flex; gap: 10px; }
+        
+        button {
+            background: var(--primary);
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            color: #0f172a;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        button:hover { opacity: 0.9; transform: translateY(-1px); }
+        #clearBtn { background: transparent; color: #94a3b8; border: 1px solid #475569; }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+        }
