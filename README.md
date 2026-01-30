@@ -16,9 +16,10 @@ A lightweight JavaScript application that demonstrates a professional **Extract,
 - **CSS3** - Custom dashboard styling.
 
 ## 🏗️ Architecture: The ETL Process
-1. **Extract:** Fetches raw hourly UTC data from a REST API.
-2. **Transform:** Normalizes ISO timestamps to browser-local time and rounds metrics for UI consistency.
-3. **Load:** Stores the processed dataset in `localStorage` and updates the chart instance.
+I designed this application using the Single Responsibility Principle (SRP) to ensure each stage of the data lifecycle is isolated:
+1. **Extract (Bronze Layer):** Fetches raw hourly UTC data from a REST API.
+2. **Transform (Silver Layer):** Normalizes ISO timestamps to browser-local time and rounds metrics for UI consistency.
+3. **Load (Gold Layer):** Stores the processed dataset in `localStorage` and updates the chart instance.
 
 ## 🚥 Getting Started
 Simply clone the repo and open `index.html` in any modern browser. No build steps required!
