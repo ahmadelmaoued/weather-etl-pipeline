@@ -9,7 +9,7 @@ A lightweight JavaScript application that demonstrates a professional **Extract,
 - **State Management:** Persists data to `localStorage` and manages UI loading states to prevent race conditions.
 
 ## 🛠️ Tech Stack
-- **HTML5
+- **HTML5**
 - **JavaScript (ES6+ Modules)** - Clean, modular code structure.
 - **Chart.js** - For trend visualization.
 - **Open-Meteo API** - High-resolution meteorological data.
@@ -22,4 +22,5 @@ A lightweight JavaScript application that demonstrates a professional **Extract,
 
 ## 🚥 Getting Started
 Simply clone the repo and open `index.html` in any modern browser. No build steps required!
+
 
